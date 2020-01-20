@@ -1,5 +1,18 @@
-function soma(numero1, numero2){
-    return numero1 + numero2
+function retornaSexo(sexo){
+    // 1 == '1'//true
+    // 1 === '1'//false
+    // if(sexo === 'M'){
+        // return 'Masculino'
+    // }
+
+    switch (sexo) {
+        case 'M':
+            return 'Masculino'
+        case 'F':
+            return 'Feminino'
+        default:
+            return 'Outro'
+    }
 }
 
-console.log(soma(1,2))
+console.log(retornaSexo('M'))
