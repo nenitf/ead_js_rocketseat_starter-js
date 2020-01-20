@@ -1,13 +1,13 @@
-// for e while
-
-// interessante usar quando sabe o range limite
-for (var i = 0; i <= 10; i++){ // enquanto i for menor ou igual a 10, faça: 
-    console.log(i)
+function exibeAlgo(){
+    console.log("Hello")
 }
 
-// interessante usar quando não sabe o range limite, mas sim a condição
-var j = 500000500
-while(j > 5) { // Enquanto Jfor maior que 5, faça: 
-    console.log(j)
-    j /= 5
-}
+// executar várias vezes a msm função dentro de um intervalo
+// em milissegundos
+
+// setInterval(exibeAlgo(), 1000) // executa a função
+// setInterval(exibeAlgo, 1000) // função como parâmetro
+
+// executar uma vez uma função depois de um intervalo
+// em milissegundos
+setTimeout(exibeAlgo, 1000)
