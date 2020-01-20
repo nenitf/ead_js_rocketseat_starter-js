@@ -1,18 +1,8 @@
-function retornaSexo(sexo){
-    // 1 == '1'//true
-    // 1 === '1'//false
-    // if(sexo === 'M'){
-        // return 'Masculino'
-    // }
+// AND, OR, NOT
 
-    switch (sexo) {
-        case 'M':
-            return 'Masculino'
-        case 'F':
-            return 'Feminino'
-        default:
-            return 'Outro'
-    }
-}
+var sexo = 'M', idade = 16
 
-console.log(retornaSexo('M'))
+console.log(sexo === 'M' && idade >= 18) // true && false -> false
+console.log(sexo === 'M' || idade >= 18) // true || false -> true
+console.log(sexo === 'M') // true -> true
+console.log(sexo !== 'M') // ~(true) -> false
