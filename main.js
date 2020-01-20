@@ -1,16 +1,12 @@
-var nome = "Diego"
-var idade = 23
-var peso = 80.5
-var humano = true
+var x = 10, y = 5
+console.log(x, y)
 
-var alunos = [ 'Diego', 'Gabriel', 'Lucas' ]
+var resultado = x + y
+console.log(resultado)
 
-var aluno = {
-    nome: alunos[2],
-    idade: 23,
-    peso: 80.5,
-    humano: true
-}
+var resto = x % 1
+console.log(resto)
 
-console.log(alunos[1])
-console.log(aluno.nome)
+// x = x + 3
+x += 3
+console.log(x)
