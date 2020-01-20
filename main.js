@@ -1,10 +1,14 @@
-console.log(document.getElementById('btn')) // tag
-console.log(document.getElementsByTagName('button')[0]) // HTMLCollections[0]
+var link = document.createElement('a')
+link.setAttribute('href', 'http://neni.dev')
+link.setAttribute('title', 'portfólio dev')
 
-console.log(document.querySelector('body button'))
-console.log(document.querySelector('button'))
-console.log(document.querySelector('#btn'))
+var text = document.createTextNode('Acessar meu site')
+link.appendChild(text)
 
-document.querySelector('#btn').onclick = function() {
-    console.log(document.querySelector('input').value)
-}
+// add link ao body
+var container = document.querySelector('body')
+container.appendChild(link)
+
+// remove btn do body
+var btn = document.querySelector('#btn')
+container.removeChild(btn)
